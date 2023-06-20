@@ -16,6 +16,7 @@ public class Main {
 
         Scanner input = new Scanner(System.in);
         String nameResidentsList;
+        String details;
 
         House house1 = new House();
 
@@ -46,11 +47,9 @@ public class Main {
         nameResidentsList= String.join(", ",(house1.getResidentsNames()));
 
         //formato
-        String details = String.format("Details:\nfloors number: %d;\nAddress: %s; \nName residents: %s.",
-                                        house1.getFloorsNumber(), house1.getAddress(), nameResidentsList);
+        details = String.format("Details:\nfloors number: %d;\nAddress: %s; \nName residents: %s.",
+                                house1.getFloorsNumber(), house1.getAddress(), nameResidentsList);
 
         System.out.println(details);
-
-
     }
 }

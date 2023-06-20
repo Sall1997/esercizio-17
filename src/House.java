@@ -2,7 +2,6 @@ public class House {
 
     private int floorsNumber;
    private String address;
-
     private int residentsNumber;
     private String[] residentsNames;
 
